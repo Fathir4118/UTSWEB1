@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Stok Buku</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style> body { background: #eef5ff; } img { border-radius: 6px; } </style>
+</head>
+<body>
+
+<div class="container mt-4">
+
+  <h3 class="fw-bold text-primary">📚 Informasi Stok Buku</h3>
+  <table class="table table-bordered table-hover mt-3">
+    <thead class="table-primary">
+      <tr>
+        <th>Cover</th>
+        <th>Kode</th>
+        <th>Nama Buku</th>
+        <th>Edisi</th>
+        <th>Stok</th>
+        <th>Harga</th>
+      </tr>
+    </thead>
+    <tbody id="tabelStok"></tbody>
+  </table>
+
+  <button class="btn btn-primary" onclick="tambahStok()">Tambah Stok (Simulasi)</button>
+</div>
+
+<script src="js/data.js"></script>
+
+<script>
+  dataKatalogBuku.forEach(buku => {
+    document.getElementById("tabelStok").innerHTML += `
+      <tr>
+        <td><img src="${buku.cover}" width="70"></td>
+        <td>${buku.kodeBarang}</td>
+        <td>${buku.namaBarang}</td>
+        <td>${buku.edisi}</td>
+        <td>${buku.stok}</td>
+        <td>${buku.harga}</td>
+      </tr>
+    `;
+  });
+
+  function tambahStok() {
+    document.getElementById("tabelStok").innerHTML += `
+      <tr class="table-success">
+        <td>-</td>
+        <td>NEW-001</td>
+        <td>Buku Baru (Simulasi)</td>
+        <td>1</td>
+        <td>100</td>
+        <td>Rp 0</td>
+      </tr>
+    `;
+  }
+</script>
+
+</body>
+</html>

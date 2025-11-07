@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Sistem pemesanan buku</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0b63ce, #1e90ff);
+      height: 100vh;
+    }
+  </style>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+
+  <div class="card shadow-lg p-4" style="width: 350px;">
+    <h3 class="text-center fw-bold text-primary">LOGIN</h3>
+
+    <div class="form-group mb-3">
+      <label>Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Masukkan email...">
+    </div>
+
+    <div class="form-group mb-4">
+      <label>Password</label>
+      <input type="password" id="password" class="form-control" placeholder="Masukkan password...">
+    </div>
+
+    <button onclick="login()" class="btn btn-primary w-100">Login</button>
+
+    <div class="d-flex justify-content-between mt-3">
+      <a href="#" class="text-primary small" onclick="alert('Fitur ini hanya simulasi sesuai tugas.')">Lupa Password?</a>
+      <a href="#" class="text-primary small" onclick="alert('Fitur daftar hanya simulasi, data tidak disimpan.')">Daftar</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script_login.js"></script>
+
+</body>
+</html>
