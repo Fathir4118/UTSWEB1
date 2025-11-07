@@ -1,0 +1,60 @@
+/* ===== DEFAULT BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef5ff;        /* warna biru muda */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAVBAR (jika nanti kamu tambah navbar) ===== */
+.navbar-custom {
+    background-color: #0b63ce !important;
+}
+.navbar-custom .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* ===== CARD DEFAULT (BOX untuk form, dashboard menu) ===== */
+.card {
+    border-radius: 12px;
+    border: 1px solid #d6e4ff;
+}
+
+/* ===== BUTTON STYLE ===== */
+.btn-primary {
+    background-color: #0b63ce;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #084a99;
+}
+
+.btn-success {
+    background-color: #1ea34a;
+}
+
+/* ===== TABLE ===== */
+.table-primary {
+    background-color: #0b63ce !important;
+    color: white !important;
+}
+
+table img {
+    border-radius: 8px;
+}
+
+/* ===== INPUT ===== */
+input, select, textarea {
+    border-radius: 6px !important;
+    border: 1px solid #7aa7e9 !important;
+}
+
+/* ===== LOGIN PAGE CUSTOM ===== */
+.login-container {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
